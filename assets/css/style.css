@@ -1,0 +1,94 @@
+:root {
+  --main--color: #e7424f;
+  --second--color: #224e4e;
+  --third--color: #7ad9bd;
+  --fourth--color: #0f1a22;
+}
+
+@font-face {
+  font-family: valorantFont;
+  src: url(../font/ValorantFont.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "valorantFont", sans-serif;
+}
+body,
+html {
+  min-height: 100vh;
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+  /* min-height: 50vh; */
+}
+#index {
+  /* background: url(../img/1.jpg) no-repeat top center fixed; */
+  background: url(../img/3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#game {
+  background: url(../img/1.jpg) no-repeat;
+  background-size: cover;
+}
+#profile {
+  background: url(../img/6.jpg) no-repeat;
+  background-size: cover;
+}
+#login {
+  background: url(../img/9.jpg) no-repeat;
+  background-size: cover;
+}
+#register {
+  background: url(../img/6.jpg) no-repeat;
+  background-size: cover;
+}
+#scores {
+  background: url(../img/2.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* ---------------------------- */
+
+header {
+  background-color: var(--second--color);
+  color: #e7424f;
+  width: 100%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 1% 0;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: var(--main--color);
+  padding: 10px 10px;
+  border: 1px solid;
+  margin-right: 10px;
+}
+header span {
+  color: #e7424f;
+  padding: 1% 1%;
+}
+
+/* --------------------------------- */
+
+footer {
+  background-color: var(--second--color);
+  color: var(--main--color);
+  display: flex;
+}
+footer a {
+  color: #fff;
+}
